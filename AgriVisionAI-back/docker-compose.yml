@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: agri_vision_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
